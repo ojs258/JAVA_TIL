@@ -1,7 +1,5 @@
 package easyCondingTest;
 
-import org.w3c.dom.ls.LSException;
-
 import java.util.ArrayList;
 import java.util.List;
 
