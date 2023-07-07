@@ -1,11 +1,6 @@
 package easyCondingTest;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
-import java.util.OptionalInt;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class question37 {
     public static void main(String[] args) {
@@ -23,17 +18,17 @@ public class question37 {
         int solution4 = new Solution37().solution(6, 4, 2, 5);
 
 
-//        System.out.println("solution0 = " + solution0);
-//        System.out.println("solution1 = " + solution1_1);
-////        System.out.println("solution1 = " + solution1_2);
-////        System.out.println("solution1 = " + solution1_3);
-//        System.out.println("solution2 = " + solution2_1);
-////        System.out.println("solution2 = " + solution2_2);
-////        System.out.println("solution2 = " + solution2_3);
-//        System.out.println("solution3 = " + solution3_1);
-////        System.out.println("solution3 = " + solution3_2);
-////        System.out.println("solution3 = " + solution3_3);
-//        System.out.println("solution4 = " + solution4);
+        System.out.println("solution0 = " + solution0);
+        System.out.println("solution1 = " + solution1_1);
+//        System.out.println("solution1 = " + solution1_2);
+//        System.out.println("solution1 = " + solution1_3);
+        System.out.println("solution2 = " + solution2_1);
+//        System.out.println("solution2 = " + solution2_2);
+//        System.out.println("solution2 = " + solution2_3);
+        System.out.println("solution3 = " + solution3_1);
+//        System.out.println("solution3 = " + solution3_2);
+//        System.out.println("solution3 = " + solution3_3);
+        System.out.println("solution4 = " + solution4);
 
     }
 }
@@ -48,20 +43,19 @@ class Solution37 {
         int[] distScores = Arrays.stream(scores).distinct().toArray();
 
 
-
        switch (Arrays.stream(dice).max().getAsInt()) {
-           case 1:
-               Arrays.stream(new int[]{a, b, c, d}).min().getAsInt();
-           case 2:
+           case 2: // 겹치는 숫자가 2개 {a,a,a,b} {a,a,b,b}
                int max = Arrays.stream(distScores).max().getAsInt();
                int min = Arrays.stream(distScores).min().getAsInt();
                int case2q = 0;
                int case2r = 0;
                if(distScores.length == 3){
                    for (int i = 1; i < dice.length; i++) {
-                       case2q = dice[i] == 1 ? i : 0;
-                       if (case2q != i) {
-                           case2r = dice[i] == 1 ? i : 0;
+                       if (case2q == 0 && dice[i] == 1) {
+                           case2q = i;
+                       }
+                       if (case2q != 0 && dice[i] == 1) {
+                           case2r = i;
                        }
                    }
                    return case2q * case2r;
@@ -69,17 +63,21 @@ class Solution37 {
                    return (max + min) * (max - min);
                }
 
-           case 3: // 겹치는 숫자가 세개
+           case 3: // 겹치는 숫자가 3개
                int case3p = 0;
                int case3q = 0;
                for (int i = 1; i < dice.length; i++) {
-                   case3p = dice[i] == 3 ? i : 0;
-                   case3q = dice[i] == 1 ? i : 0;
+                   if (dice[i] == 3) {
+                       case3p = i;
+                   }
+                   if (dice[i] == 1) {
+                       case3q = i ;
+                   }
                }
                return (10 * case3p + case3q) * (10 * case3p + case3q);
 
            default:
-               return 1111 * a;
+               return distScores.length == 1 ? 1111 * a: Arrays.stream(new int[]{a, b, c, d}).min().getAsInt();
        }
     }
 }
