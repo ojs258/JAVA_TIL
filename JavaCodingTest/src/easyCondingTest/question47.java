@@ -1,9 +1,5 @@
 package easyCondingTest;
 
-import java.util.Arrays;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
-
 public class question47 {
     public static void main(String[] args) {
         int solution = new Solution47().solution("banana","ban");
