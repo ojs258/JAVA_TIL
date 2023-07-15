@@ -5,7 +5,7 @@ import java.util.stream.IntStream;
 
 public class question104 {
     public static void main(String[] args) {
-        int solution = new Solution04().solution("123456789");
+        int solution = new Solution04().solution("12345678954");
 
         System.out.println("solution = " + solution);
     }

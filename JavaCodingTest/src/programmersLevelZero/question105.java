@@ -2,7 +2,7 @@ package programmersLevelZero;
 
 public class question105 {
     public static void main(String[] args) {
-        int solution = new Solution05().solution("10");
+        int solution = new Solution05().solution("1055");
         System.out.println("solution = " + solution);
     }
 }

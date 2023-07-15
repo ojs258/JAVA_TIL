@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class question102 {
     public static void main(String[] args) {
-        int solution = new Solution02().solution(new int[]{20,5,3,7,5,80}, new boolean[]{true, false, true, false, false, true});
+        int solution = new Solution02().solution(new int[]{20,5,3,9,5,80}, new boolean[]{true, false, true, false, false, true});
         System.out.println("solution = " + solution);
     }
 }

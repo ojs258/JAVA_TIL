@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class question100 {
     public static void main(String[] args) {
-        int[] solution = new Solution00().solution(new int[]{12, 4, 15, 46, 38, 1, 14});
+        int[] solution = new Solution00().solution(new int[]{12, 4, 15, 46, 38, 2, 14});
     }
 }
 
