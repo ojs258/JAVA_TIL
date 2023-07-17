@@ -40,12 +40,12 @@ class Solution1503702 {
     }
 
     private int dateForm(String date) {
-        String[] sdate = date.split("\\.");
+        String[] sdate = date.split("\\."); // 자바가 . 기호를 인식하게 하려면 \\.
 
         int y = Integer.parseInt(sdate[0]); // YEAR
         int m = Integer.parseInt(sdate[1]); // MONTH
         int d = Integer.parseInt(sdate[2]); // DATE
 
         return y * 12 * 28 + m *28 + d;
-    } // 날짜 체계 자체를 바꿔서 한달을 28일로 고정하고 day로 바꿔서 리턴
+    } // 날짜 체계 자체를 바꿔서 한달을 28일로 고정하고 일(day)로 바꿔서 리턴
 }
