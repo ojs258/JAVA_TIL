@@ -14,6 +14,7 @@ class Solution02 {
             playerRank.put(i+1, players[i]);
             runningPlayer.put(players[i], i+1);
         }
+        StringBuilder sb = new StringBuilder("asdf");
 
         for(String call : callings) {
             // 해설자가 부를 예정인 선수의 순위를 가져옴
