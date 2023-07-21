@@ -28,12 +28,4 @@ public class Solution04 {
         // 가로(x), 세로(y)로 풀어서 서로 자리를 바꿔서 리턴
         return new int[] {sy,sx,ey+1,ex+1};
     }
-
-    public static void main(String[] args) {
-        int[] solution = new Solution04().solution(new String[]{".#...", "..#..", "...#."});
-
-        for (int i : solution) {
-            System.out.print(i+",");
-        }
-    }
 }
