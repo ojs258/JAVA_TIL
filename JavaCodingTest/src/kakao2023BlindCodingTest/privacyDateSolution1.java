@@ -1,10 +1,8 @@
-package kakaoBlindCodingTest;
+package kakao2023BlindCodingTest;
 
-import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 //개인정보 수집 유효기간

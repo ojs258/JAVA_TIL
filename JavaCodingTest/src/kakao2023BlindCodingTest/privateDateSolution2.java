@@ -1,10 +1,9 @@
-package kakaoBlindCodingTest;
+package kakao2023BlindCodingTest;
 
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class privateDateSolution2 {
     public static void main(String[] args) throws ParseException {
