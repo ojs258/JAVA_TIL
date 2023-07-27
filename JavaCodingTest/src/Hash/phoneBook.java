@@ -1,19 +1,17 @@
 package Hash;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class phoneBook {
     public boolean solution(String[] phone_book) {
-        List<String> pb = new ArrayList<>();
-        int cnt = 0;
-        Collections.addAll(pb, phone_book);
+        List<String> pb = new LinkedList<>();
         Collections.sort(pb);
         for(String str1 : pb){
             for(String str2 : pb){
-                if(!str2.equals(str1) && str2.contains(str1)){
-                    cnt++;
+                if(!str1.equals(str2)){
+                    if(str2.startsWith(str1)){
+                        return false;
+                    }
                 }
             }
         }
@@ -21,6 +19,7 @@ public class phoneBook {
     }
 
     public static void main(String[] args) {
-        new phoneBook().solution(new String[]{});
+        boolean solution = new phoneBook().solution(new String[]{"12", "123", "1235", "567", "88"});
+        System.out.println("solution = " + solution);
     }
 }
