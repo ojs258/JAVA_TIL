@@ -26,7 +26,7 @@ public class retire {
         for(String str : players.keySet()){
             if(players.get(str).equals(1)){
                 return str;
-            };
+            }
         }
         return "";
     }
