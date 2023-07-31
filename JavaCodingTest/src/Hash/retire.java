@@ -9,7 +9,7 @@ public class retire {
         List<String> comp = new LinkedList<>(Arrays.asList(completion));
         Collections.sort(part);
         Collections.sort(comp);
-        for(String str : comp){
+        for (String str : comp) {
             part.remove(str);
         }
         return part.get(0);
@@ -28,6 +28,7 @@ public class retire {
                 return str;
             }
         }
+
         return "";
     }
 
