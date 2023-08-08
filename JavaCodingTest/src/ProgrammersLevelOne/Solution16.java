@@ -8,7 +8,6 @@ public class Solution16 {
         int[] arr = new int[]{2,1,1,2,3,1,2,3,1};
         int[] burger = new int[]{1,2,3,1};
 
-        Arrays.
         return 0;
     }
 }
