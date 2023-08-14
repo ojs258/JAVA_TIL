@@ -31,4 +31,7 @@ public class FunctionalDevelopment {
         }
         return answer.stream().mapToInt(n -> n).toArray();
     }
+    // 수학으로 정리해서 각 기능의 진행도 마다 필요한 일 수를 구한다.
+    // 일수가 더 작으면 넘어가고 더 크면 해당 값으로 컨디션을 바꿔주고
+    // 배포를 진행한다.
 }
