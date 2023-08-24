@@ -2,29 +2,26 @@ package ProgrammersHighScoreKit.Sort;
 
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class MostBigNumber {
     public String solution(int[] numbers) {
 
-        List<String> list = new ArrayList<>();
-        for(int num : numbers) {
-            list.add(String.valueOf(num));
-        }
-        list.sort(new Comparator<String>(){
-            public int compare(String s1, String s2) {
-                for(int i = 0; i < s1.length(); i++) {
-                    for(int j = 0; j < s2.length(); j++) {
-                        if(s1.charAt(i) > s2.charAt(i)) {
-                            return s1.length() < s2.length() ? -1 : 1;
-                        } else {
-                            return s1.length() < s2.length() ? -1 : 1;
-                        }
-                    }
-                }
-                return 0;
-            }
-        });
+        List<Integer> list = new ArrayList<>();
 
-        return list.stream().collect(Collectors.joining());
+        for (int num : numbers) {
+            list.add(num);
+        }
+
+        list.sort((o1, o2) -> {
+            String s1 = String.valueOf(o1);
+            String s2 = String.valueOf(o2);
+            return Integer.parseInt(s2 + s1) - Integer.parseInt(s1 + s2);
+        });
+        String answer = list.stream()
+                .map(String::valueOf)
+                .collect(Collectors.joining());
+
+        return answer.charAt(0) == '0' ? "0" : answer;
     }
 }
