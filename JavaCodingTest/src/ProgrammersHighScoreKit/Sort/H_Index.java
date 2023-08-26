@@ -1,9 +1,16 @@
 package ProgrammersHighScoreKit.Sort;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 
 public class H_Index {
-    public static void main(String[] args) {
-        ArrayList<Integer> integers = new ArrayList<>();
+    public int solution(int[] citations) {
+        Arrays.sort(citations);
+        int max = 0;
+
+        for(int i = 0; i < citations.length; i++) {
+            int tmp = Math.min(citations[i],citations.length - i);
+            max = Math.max(max, tmp);
+        }
+        return max;
     }
 }
