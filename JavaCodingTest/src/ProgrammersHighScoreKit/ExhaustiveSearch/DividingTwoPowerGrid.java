@@ -1,9 +1,9 @@
-package ETC.ExhaustiveSearch;
+package ProgrammersHighScoreKit.ExhaustiveSearch;
 
 import java.util.*;
 
 /*
-* 완전 탐색(ETC.ExhaustiveSearch) - 너비 우선 탐색,BFS(BreadthFirstSearch)
+* 완전 탐색(ProgrammersHighScoreKit.ExhaustiveSearch) - 너비 우선 탐색,BFS(BreadthFirstSearch)
 * 프로그래머스 전력망을 둘로 나누기 - 86971
 * */
 public class DividingTwoPowerGrid {
