@@ -2,7 +2,7 @@ package ProgrammersHighScoreKit.Hash;
 
 import java.util.*;
 
-public class bestAlbum {
+public class BestAlbum {
     public int[] solution(String[] genres, int[] plays) {
         Map<String, Integer> total = new HashMap<>();
         Map<String, List<Song>> best = new HashMap<>();
@@ -62,7 +62,7 @@ public class bestAlbum {
 
     }
     public static void main(String[] args) {
-        int[] solution = new bestAlbum().solution(new String[]{"classic", "pop", "classic", "classic", "pop"}, new int[]{500, 600, 150, 800, 2500});
+        int[] solution = new BestAlbum().solution(new String[]{"classic", "pop", "classic", "classic", "pop"}, new int[]{500, 600, 150, 800, 2500});
         for (int i : solution) {
             System.out.println("i = " + i);
         }

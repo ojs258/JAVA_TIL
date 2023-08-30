@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class phoneketmon {
+public class Phoneketmon {
     public int solution(int[] nums) {
         /*
          * 해시의 특징중에서 문제가 요구하는 특징이 중복제거 밖에없기 때문에
@@ -27,6 +27,6 @@ public class phoneketmon {
     }
 
     public static void main(String[] args) {
-        new phoneketmon().solution(new int[]{3,1,2,3});
+        new Phoneketmon().solution(new int[]{3,1,2,3});
     }
 }

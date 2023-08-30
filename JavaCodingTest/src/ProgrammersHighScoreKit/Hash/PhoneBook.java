@@ -2,7 +2,7 @@ package ProgrammersHighScoreKit.Hash;
 
 import java.util.*;
 
-public class phoneBook {
+public class PhoneBook {
     public boolean solution(String[] phoneBook) {
         //셋 생성 시점에 정렬을 해주는 TreeSet 이용
         Set<String> pb = new TreeSet<>(List.of(phoneBook));
@@ -20,7 +20,7 @@ public class phoneBook {
     }
 
     public static void main(String[] args) {
-        boolean solution = new phoneBook().solution(new String[]{"12", "123", "1235", "567", "88"});
+        boolean solution = new PhoneBook().solution(new String[]{"12", "123", "1235", "567", "88"});
         System.out.println("solution = " + solution);
     }
 }

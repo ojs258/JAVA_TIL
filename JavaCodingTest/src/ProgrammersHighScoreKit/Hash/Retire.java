@@ -2,7 +2,7 @@ package ProgrammersHighScoreKit.Hash;
 
 import java.util.*;
 
-public class retire {
+public class Retire {
     public String solution1(String[] participant, String[] completion) {
         //LinkedList와 sort로 극한의 최적화로 푼 버전
         List<String> part = new LinkedList<>(Arrays.asList(participant));
@@ -33,7 +33,7 @@ public class retire {
     }
 
     public static void main(String[] args) {
-        String solution = new retire().solution(new String[]{"mislav", "stanko", "mislav", "ana"}, new String[]{"stanko", "mislav", "ana"});
+        String solution = new Retire().solution(new String[]{"mislav", "stanko", "mislav", "ana"}, new String[]{"stanko", "mislav", "ana"});
         System.out.println("solution = " + solution);
     }
 }

@@ -3,7 +3,7 @@ package ProgrammersHighScoreKit.Hash;
 import java.util.HashMap;
 import java.util.Map;
 
-public class clothes {
+public class Clothes {
     public int solution(String[][] clothes) {
         Map<String, Integer> cloMap = new HashMap<>();
         int answer = 1;
