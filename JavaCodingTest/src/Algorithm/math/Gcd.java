@@ -1,4 +1,4 @@
-package Algorithm;
+package Algorithm.math;
 
 public class Gcd {
     // 기본적인 방법
@@ -19,6 +19,7 @@ public class Gcd {
         }
         return b;
     }
+
 // 유클리드 호제법 - 재귀를 이용한 방법
     public int gcd3(int a, int b) {
         if (a % b == 0) return b;
