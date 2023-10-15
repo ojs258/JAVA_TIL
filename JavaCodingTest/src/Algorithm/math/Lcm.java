@@ -1,4 +1,4 @@
-package Algorithm;
+package Algorithm.math;
 
 public class Lcm {
     public int gcd(int a, int b) {
