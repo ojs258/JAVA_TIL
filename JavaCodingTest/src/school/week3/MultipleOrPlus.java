@@ -16,7 +16,9 @@ public class MultipleOrPlus {
     }
 
     public static void main(String[] args) {
-        int solution = solution("02984");
-        System.out.println("solution = " + solution);
+        int solution1 = solution("02984");
+        int solution2 = solution("576");
+        System.out.println("solution = " + solution1);
+        System.out.println("solution = " + solution2);
     }
 }

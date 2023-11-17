@@ -1,4 +1,4 @@
-package school;
+package school.week5;
 
 public class UpDownLeftRight {
     public int[] solution(int n, String[] plan) {

@@ -1,4 +1,4 @@
-package school;
+package school.week5;
 
 public class OClock {
     public int solution(int n) {
